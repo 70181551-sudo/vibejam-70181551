@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AskSE Help Desk | UOL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <header class="chat-header">
+      <div class="avatar">🎓</div>
+      <div class="header-text">
+        <h1>AskSE Help Desk</h1>
+        <p>University of Lahore • AI Assistant</p>
+      </div>
+      <span class="status"><i></i> Online</span>
+    </header>
+
+    <div id="chat-box">
+      <div class="bot-message">
+        Assalam-o-Alaikum! 👋 How can I help you?
+      </div>
+    </div>
+
+    <div class="quick-replies">
+      <button onclick="quickAsk('Library timings')">📚 Library</button>
+      <button onclick="quickAsk('Admission')">📝 Admission</button>
+      <button onclick="quickAsk('Fee')">💳 Fee</button>
+      <button onclick="quickAsk('Exam')">🗓️ Exams</button>
+    </div>
+
+    <div class="input-area">
+      <input id="user-input" placeholder="Ask your question..." autocomplete="off">
+      <button class="send-btn" onclick="sendMessage()">Send ➤</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
